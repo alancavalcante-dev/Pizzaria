@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    background: linear-gradient(to right, rgb(252, 193, 106), rgb(247, 143, 69));
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+}
+
+.lista {
+    width: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav li {
+    list-style: none;   
+}
+
+
+
+
+header  section  img, a {
+    width: 45px;
+    height: 45px;
+}
+
+header  section a:hover {
+    filter: brightness(20%);
+}
+
+header  section  nav  a, header  section  p{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px gray;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+footer {
+    background-image: url(../images/wallpaper-madeira.jpeg);
+    height: 100px;
+    width: 100%;
+}
+
+.conteudo-centralizado {
+    width: 900px;
+    display: block;
+    margin: 30px auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.margin-top {
+    margin-top: 50px;
+    
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.sombreamento-em-baixo {
+    box-shadow: -2px 3px 10px rgba(3, 3, 3, 0.164);
+    border-radius: 8px;
+}

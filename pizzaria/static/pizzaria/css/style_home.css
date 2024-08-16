@@ -1,0 +1,139 @@
+#carrosel-pizzas-home {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.438);
+}
+
+#carouselExampleSlidesOnly img {
+    height: 700px;
+    filter: brightness(65%);
+}
+
+#logo-tipo {
+    width: 580px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.884));
+}
+
+
+h2 {
+    color: rgb(202, 100, 26);
+    margin: 0;
+}
+
+hr {
+    width: 60px;
+    height: 5px;
+    color: rgb(172, 78, 12);
+    background-color: rgb(145, 62, 2);
+    margin-top: 5px;
+}
+
+
+.ranking_pizzas {
+    width: 900px;
+
+}
+
+.ranking_pizzas h4 {
+    margin-top: 20px;
+    color: rgb(253, 186, 0);
+}
+
+.ranking_pizzas img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.ranking_pizzas p {
+    color: rgb(107, 107, 107);
+    filter: none;
+}
+
+.ranking_pizzas  {
+    text-align: center;
+}
+
+.ranking_pizzas span {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 25px;
+    z-index: 999;
+}
+
+.descricao-pizza {
+    color: black;
+    font-weight: bold;
+}
+
+.resto-pagina {
+    background-image: url(../images/wallpaper-pizza.jpg);
+    background-color: rgb(0,0,0,0.5);
+    height: 100%;
+}
+
+
+.endereco {
+    width: 900px;
+    height: 465px;
+    display: block;
+    margin: 0 auto;
+}
+
+.endereco h2 {
+    padding-top: 20px;
+    color: white;
+}
+
+.endereco iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+}
+
+.endereco hr {
+    color: white;
+}
+
+
+
+.horarios-funcionamento {
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+.horarios-funcionamento h2 {
+    color: white;
+    text-align: center;
+    border-color: white;
+    margin-bottom: 10px;
+}
+
+
+#funcionamento {
+    display: flex; 
+    justify-content: center;
+    border: 0 0 0 3px white;
+    gap: 20px;
+}
+
+
+#funcionamento p{
+    margin: 0;
+    color: white;
+    font-size: 22px;
+}

@@ -1,0 +1,86 @@
+{% extends "pizzaria/base.html" %}
+{% load static %}
+
+{% block linkcss %} 
+    <link rel="stylesheet" href="{% static 'pizzaria/css/style_home.css' %}">
+{% endblock %}
+
+{% block main %} 
+
+<section id="carrosel-pizzas-home">
+    <img id="logo-tipo" src="{% static 'pizzaria/images/logo.png' %}" alt="Logo" draggable="false">
+    <section id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'pizzaria/images/pizza1.jpg' %}" class="d-block w-100" alt="pizza1"  draggable="false">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'pizzaria/images/pizza2.jpeg' %}" class="d-block w-100" alt="pizza2"  draggable="false">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'pizzaria/images/pizza3.jpg' %}" class="d-block w-100" alt="pizza3"  draggable="false">
+        </div>
+        </div>
+    </section>
+</section>
+
+<section class="conteudo-centralizado">
+    <h2>Mais pedidos</h2>
+    <hr>
+    
+    <div class="ranking_pizzas">
+        {% for i in ranking_pizzas%}
+            <div class="display-flex margin-top sombreamento-em-baixo">
+                <img src="{{ i.imagem.url }}" alt="{{ i.nome }}" draggable="false">
+                <div class="width-100">
+                    <h4>{{ i.nome }} ⭐</h4>
+                    <p class="descricao-pizza">{{ i.descricao }}</p>
+                    <p class="ingredientes-pizza"><b>Ingredientes:</b> {{ i.ingredientes }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+</section>
+
+<section class="resto-pagina">
+
+    <div class="endereco">
+        <h2>Endereço</h2>
+        <hr>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7314.146475182783!2d-46.712163!3d-23.565813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x250a4f4425508602!2sFUSP%20-%20Funda%C3%A7%C3%A3o%20de%20Apoio%20%C3%A0%20Universidade%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sus!4v1569879677235!5m2!1spt-BR!2sus" frameborder="0"></iframe>
+    </div>
+
+    <div class="horarios-funcionamento">
+        <h2>Horários de Funcionamento</h2>
+        
+        <div id="funcionamento">
+            <div style="text-align: right; border-color: white;">
+                <p>Segunda-feira</p>
+                <p>Terça-feira</p>
+                <p>Quarta-feira</p>
+                <p>Quinta-feira</p>
+                <p>Sexta-feira</p>
+                <p>Sábado</p>
+                <p>Domingo</p>
+            </div>
+
+            <div style="text-align: left;">
+                <p>FECHADO</p>
+                <p>12h às 18h</p>
+                <p>9h às 18h</p>
+                <p>9h às 18h</p>
+                <p>7h às 21h</p>
+                <p>7h às 21h</p>
+                <p>7h às 23h</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+{% endblock %}
+
